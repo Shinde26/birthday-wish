@@ -3,47 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happiest Birthday, Baby! 🎉</title>
+    <title>Happiest Birthday, My Love! 🎉</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Basic CSS styling */
+        /* Base styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             text-align: center;
-            background-color: #fce4ec; /* Light pink background */
+            background: linear-gradient(135deg, #fce4ec 0%, #ffc1e3 100%); /* Soft gradient background */
             color: #4a148c; /* Deep purple text */
-            padding: 50px;
+            padding: 20px;
             margin: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            overflow: hidden; /* Hide potential scrolling from background animation */
         }
+
+        /* Container for the card */
         .container {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white card */
             padding: 40px 60px;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-            animation: fadeIn 2s ease-in-out;
+            border-radius: 20px; /* Softer rounded corners */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+            max-width: 700px;
+            width: 90%;
+            animation: cardSlideUp 1s ease-out; /* Main card entry animation */
+            border: 3px solid #d81b60; /* Pink border */
         }
+
+        /* Main Heading */
         h1 {
-            color: #d81b60; /* Pink heading */
-            font-size: 3em;
-            margin-bottom: 10px;
+            font-family: 'Great Vibes', cursive; /* Romantic script font for heading */
+            color: #d81b60; /* Deep pink heading */
+            font-size: 4.5em; /* Larger heading */
+            margin-bottom: 5px;
+            animation: pulse 2s infinite alternate; /* Subtle pulse animation for impact */
         }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-        .date {
+        
+        /* Sub-heading for the message */
+        h2 {
+            color: #4a148c;
             font-size: 1.5em;
-            margin-top: 20px;
-            font-weight: bold;
+            margin-top: 5px;
+            border-bottom: 2px solid #ff80ab;
+            padding-bottom: 5px;
+            display: inline-block;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+
+        /* Paragraphs and message content */
+        p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        /* Closing/Date section */
+        .closing {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px dashed #cccccc;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #d81b60;
+            text-align: center;
+        }
+
+        /* Keyframe Animations */
+        @keyframes cardSlideUp {
+            from { opacity: 0; transform: translateY(50px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.03); }
+        }
+        
+        /* Optional: Style for a potential image */
+        .photo-frame {
+            margin: 20px auto;
+            border: 5px solid #ff80ab;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 0 15px rgba(216, 27, 96, 0.6);
+        }
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -51,25 +103,27 @@
     <div class="container">
         <h1>Happiest Birthday Baby!</h1>
         
+        <h2>To My Love, Butki... 🎉</h2>
         <p>
-            Happy Birthday, My love Butki! 🎉
-            Wishing you a fantastic day filled with joy, laughter, and wonderful moments to cherish.
-            May this new year of your life bring you success and all the happiness in the world. You're a great person!
+            Wishing you a fantastic day filled with joy, laughter, and wonderful moments to cherish. May this new year of your life bring you success and all the happiness in the world. You're a great person!
+        </p>
 
-            There are so many things I love about you. I love the way you kiss me, the way you hold my hand. I love the way you look into my eyes like you just get me. But the thing I love the most is how safe and free i feel with you.
-            Your love gives me wings. I'll never stop reminding you how much you mean to me and how deeply I love every part of who you are. I'm the luckiest to have a woman like you-someone, who's never disrespected me and always stands by me like a shadow in my darkest moments.
-            You're the sparkle in my every single day and night + My day starts and ends with you. With you, every day feels like happiness. You light up my heart brighter than any diya
+        <h2>My Dearest Feelings</h2>
+        <p>
+            There are so many things I love about you. I love the way you kiss me, the way you hold my hand. I love the way you look into my eyes like you just get me. But the thing I love the most is how safe and free I feel with you.
+        </p>
+        <p>
+            Your love gives me wings. I'll never stop reminding you how much you mean to me and how deeply I love every part of who you are. I'm the luckiest to have a woman like you—someone who's never disrespected me and always stands by me like a shadow in my darkest moments.
+        </p>
+        <p>
+            You're the sparkle in my every single day and night + My day starts and ends with you. With you, every day feels like happiness. You light up my heart brighter than any diya. ✨
         </p>
         
-        <p class="date">
-            Once Again Happiest Birthday Pilyaa..💕🥳
-            I love you so much...💋💋
-            Missing You a lot..😢
-        </p>
+        <div class="closing">
+            Once Again Happiest Birthday Pilyaa! 💕🥳<br>
+            I love you so much... 💋💋<br>
+            Missing You a lot.. 🥺
+        </div>
     </div>
 </body>
 </html>
-
-
-
-
